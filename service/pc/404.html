@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>R PAY</title>
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<style style="text/css">
+	/* reset */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textar ea,button{margin:0;padding:0}
+	fieldset,img{border:0 none}
+	dl,ul,ol,menu,li{list-style:none}
+	blockquote, q{quotes:none}
+	blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+	input,select,textarea,button{vertical-align:middle}
+	input::-ms-clear{display:none}
+	button{border:0 none;background-color:transparent;cursor:pointer}
+	body{background:#fff}
+	body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+	a{color:#000;text-decoration:none}
+	a:active, a:hover{text-decoration:underline}
+	a:active{background-color:transparent}
+	address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+	caption{overflow:hidden;width:1px;height:0.1px;font-size:0;line-height:0;text-indent:-9999px}
+	
+	/* common */
+	.ir_pm{display:block;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px}
+	.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+	.show{display:block}
+	.hide{display:none}
+	
+	/* error */
+	html, body{height:100%}
+	#rpayWrap{min-width:1220px;height:100%}
+	#container{position:relative;width:1100px;min-height:100%;margin:0 auto}
+	#mArticle{position:absolute;width:100%;min-height:100%;margin:0 auto}
+	.cont_error{position:absolute;width:878px;height:592px;top:50%;left:50%;margin:-295px -0 0 -439px;background:url(images/bg_error.jpg) 0 0 no-repeat}
+	.cont_error .wrap_btn{position:absolute;top:323px}
+	.cont_error .link_rpay{float:left;width:179px;height:36px;margin-right:8px;padding-top:12px;border:1px solid #999;font-size:18px;text-align:center}
+	.cont_error .link_rpay:hover{text-decoration:none}
+	</style>
+</head>
+<body>
+	<div id="rpayWrap" class="wrap_main">
+		<div id="header" role="banner"></div><!-- //header -->
+		<hr class="hide">
+		<div id="container" role="main">
+			<div id="mArticle">
+				<div class="cont_error">
+					<h2 class="screen_out">페이지를 찾을 수 없습니다.</h2>
+					<div class="wrap_btn">
+						<a href="#none" class="link_rpay">이전 화면</a>
+						<a href="#none" class="link_rpay">홈 화면</a>
+					</div>
+				</div>
+			</div><!-- //mArticle -->
+		</div><!-- //container -->
+		<hr class="hide">
+		<div id="footer" role="contentinfo"></div><!-- //footer -->
+	</div><!-- //rpayWrap -->
+</body>
+</html>

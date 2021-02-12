@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="naver-site-verification" content="0cab9586f5e7fe6d92af47ad36b7bbb44b0cac85">
+	<meta name="description" content="미리 누리는 인생의 로망, EVERY/R">
+	<meta name="naver-site-verification" content="df5fab702dd5bafbd033d46fb9d5cc95d106298e"/>
+	<meta property="og:title" content="${title}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.everyr.com">
+	<meta property="og:image" content="https://www.everyr.com/resources/p/images/everyr.jpg">
+	<meta property="og:description" content="미리 누리는 인생의 로망, EVERY/R">
+	<title>미리 누리는 인생의 로망, EVERY/R</title>
+	<link rel="stylesheet" type="text/css" href="./_css/common.css">
+	<script type="text/javascript"  src="../../service/common/js/require-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	 require([ 'jquery','_js/home'],function($, Home) { 
+	
+			Home.contact();
+	
+	 });
+	</script>
+</head>
+<body>
+	<div id="skip_navi">
+		<a href="#everyrBody">본문 바로가기</a>
+		<a href="#everyrGnb">주 메뉴 바로가기</a>
+	</div>
+	<div id="everyrWrap">
+		<div id="header" role="banner">
+			<h1 class="tit_logo"><a href="#none" class="img_everyr logo_everyr">EVERY R</a></h1>
+		</div>
+		<div role="navigation" class="nav_main"></div>
+		<div id="container" role="main" class="cont_sub cont_brand">
+			<div id="mArticle">
+				<h2 class="tit_sub">CONTACT US</h2>
+				<div class="main_detail">
+					<strong class="tit_detail">아래 내용을 기재해주시면<br>담당자가 직접 연락 드리겠습니다.</strong>
+					<form id="formContact">
+						<fieldset>
+							<legend class="screen_out">문의사항</legend>
+							<div class="input_comm f_l">
+								<label for="userCompnay" class="lab_g">회사명</label>
+								<input type="text" id="userCompnay" class="inp_g">
+							</div>
+							<div class="input_comm f_l type2">
+								<label for="userName" class="lab_g">제안담당자</label>
+								<input type="text" id="userName" class="inp_g" placeholder="작성하시는 분 성함을 기재해주세요.">
+							</div>
+							<div class="input_comm">
+								<label for="userAddress" class="lab_g">회사주소</label>
+								<input type="text" id="userAddress" class="inp_g" placeholder="예) 서울시 강남구 논현동">
+							</div>
+							<div class="input_comm f_l">
+								<label for="userPhone" class="lab_g">전화번호</label>
+								<input type="text" id="userPhone" class="inp_g" placeholder="-를 포함하여 전화번호를 기재해주세요">
+							</div>
+							<div class="input_comm f_l type2">
+								<label for="userMail" class="lab_g">메일주소</label>
+								<input type="text" id="userMail" class="inp_g" placeholder="수신 가능한 이메일을 기재해주세요">
+							</div>
+							<div class="input_comm input_field">
+								<label for="userContent" class="lab_g">제휴내용</label>
+								<div class="inner_field">
+									<textarea id="userContent" class="tf_request" maxlength="1000" title=""></textarea>
+									<span class="txt_num"><span class="screen_out">현재 글자수</span><em class="emph_now">8</em><span class="screen_out">총 글자수</span>/1000</span>
+								</div>
+							</div>
+							<div class="input_comm input_attach">
+								<strong class="lab_g">파일첨부</strong>
+								<input type="text" class="file_attach" value=".pdf .doc .docx .ppt .pptx .hwp .txt .xls .xlsx" disabled="disabled" autocomplete="off">
+								<input type="file" id="fileUpload" class="inp_file" autocomplete="off">
+								<label id="labFile" for="fileUpload" class="btn_attach">첨부하기</label>
+							</div>
+							<div class="input_comm input_personal">
+								<strong class="lab_g">개인정보 수집 및 이용에 대한 안내</strong>
+								<p class="desc_personal">
+									<em class="em_personal">㈜에브리알은 문의에 대한 안내를 진행하기 위해 아래와 같은 개인정보를 수집합니다.</em>
+								- 수집하는 개인정보 : 이름, 전화번호, 이메일주소<br>
+								- 개인정보 수집 목적 : 문의에 대한 안내 진행 목적<br>
+								- 개인정보 수집 방법 : 수집에 대한 동의 후 문의 등록 시<br>
+								- 보유기간 : 담당자의 연락 후 6개월 
+								</p>
+								<div class="check_comm">
+									<div class="inner_check">
+										<input type="checkbox" id="checkAgree" name="inpCheck" class="inp_check">
+										<label for="checkAgree" class="lab_check"><span class="img_everyr ico_check"></span>위 내용에 동의합니다.</label>
+									</div>
+								</div>
+								<span class="txt_wrong">'개인정보 수집 및 이용약관'에 동의해 주셔야 문의등록이 가능합니다.</span>
+								<button type="submit" class="btn_submit">문의 등록</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div><!-- //mArticle -->
+		</div><!-- //container -->
+		<div id="footer" role="contentinfo">
+			<div class="inner_footer">
+				<div class="info_service">
+					<h2 class="img_everyr tit_logo">EVERY R /</h2>
+					<a href="#none" class="link_policy">개인정보처리방침</a>
+					<address class="info_address">
+						<span class="txt_contact">(주)에브리알</span>
+						<span class="txt_contact">대표이사 : 함희준</span>
+						<span class="txt_contact"><span class="screen_out">주소</span>서울특별시 강남구 언주로135길 34 어나더빌딩</span>
+						<span class="txt_contact">COPYRIGHT © 2019 EVERYR CO.LTD ALL RIGHTS RESERVED.</span>
+					</address>
+				</div>
+				<div class="info_support">
+					<span class="txt_contact">고객문의 <span class="txt_phone">1600-3512</span></span>
+					<span class="txt_cstime">(평일 09시~18시 / 점심시간 13~14시 제외)</span>
+				</div>
+			</div>
+		</div>
+	</div><!-- //everyrWrap -->
+</body>
+</html>

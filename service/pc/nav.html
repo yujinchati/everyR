@@ -1,0 +1,77 @@
+				<div class="inner_nav">
+					<button type="button" class="btn_menu">
+						<span class="ico_menu">
+							<span class="ico_line"></span>
+							<span class="ico_line"></span>
+							<span class="ico_line" ></span>
+						</span>
+					</button>
+					<div class="menu_nav cont_menu">
+						<ul class="list_sns">
+							<li><a href="https://pf.kakao.com/_PDxgQT" target="_blank" class="link_sns"><span class="img_everyr ico_kakao">카카오톡</span></a></li>
+							<li><a href="https://www.instagram.com/RPAY_OFFICIAL/" target="_blank" class="link_sns"><span class="img_everyr ico_insta">인스타그램</span></a></li>
+							<li><a href="https://blog.naver.com/everyrcorp" target="_blank" class="link_sns"><span class="img_everyr ico_blog">네이버블로그</span></a></li>
+						</ul>
+					</div>
+					<div class="menu_nav cont_nav">
+						<div class="nav_left">
+							<ul class="list_menu">
+								<li><a href="main.html" class="link_menu">About us</a></li>
+								<li><a href="http://www.r-pay.co.kr" target="_blank" class="link_menu">R/pay<span class="img_everyr ico_blank">새창열기</span></a></li>
+								<li><a href="partner.html" class="link_menu">Partner brand</a></li>
+								<li class="li_sub"><a href="#none" class="link_menu link_sub">+ Promotion</a>
+									<div class="sub_menu">
+										<a href="event.html?event" class="link_menu">Event</a>
+										<a href="event.html" class="link_menu">Credit card</a>
+									</div>
+								</li>
+								<li><a href="contact.html" class="link_menu">Contact us</a></li>
+							</ul>
+							<ul class="list_sns">
+								<li><a href="https://pf.kakao.com/_PDxgQT" target="_blank" class="link_sns"><span class="img_everyr ico_kakao">카카오톡</span></a></li>
+								<li><a href="https://www.instagram.com/RPAY_OFFICIAL/" target="_blank" class="link_sns"><span class="img_everyr ico_insta">인스타그램</span></a></li>
+								<li><a href="https://blog.naver.com/everyrcorp" target="_blank" class="link_sns"><span class="img_everyr ico_blog">네이버블로그</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+	<script type="text/javascript">
+	  require([ 'jquery','../../service/common/js/utility'],function($,util) {
+			$(window).scroll(function(){
+				var scrollBnr = $(window).scrollTop();
+				if(scrollBnr && !$("#everyrWrap").hasClass("wrap_main")){
+					$("#header").addClass("fixed");
+				}else{
+					$("#header").removeClass("fixed");
+				}
+			});
+			
+			$('.nav_main .btn_menu').click(function(e){
+				$(".inner_nav").toggleClass("on");
+				$(this).toggleClass("active");
+				
+				if($(".inner_nav").hasClass('on')){
+					$(".menu_nav.cont_nav").stop(true).animate({left:'0%'},500,function(){
+						$(".menu_nav.cont_menu").css({'display':'none'})
+					});
+				}else{
+					$(".menu_nav.cont_nav").stop(true).animate({left:'100%'},300,function(){
+						$(".menu_nav.cont_menu").css({'display':'block'})
+					});
+				};
+			});
+			$('.nav_main .cont_nav .li_sub .link_sub').click(function(e){
+				util.target.preventEvent(e);
+				var target = util.target.get(e);
+				if(target.hasClass("open")){
+					target.removeClass("open");
+					target.text("+ Promotion")
+					target.parent().find(".sub_menu").stop().slideUp(300);
+				}else{
+					target.addClass("open");
+					target.text("- Promotion")
+					target.parent().find(".sub_menu").stop().slideDown(300);
+				}
+			});
+	});
+</script>
